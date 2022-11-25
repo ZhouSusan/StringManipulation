@@ -6,8 +6,13 @@ public class StringManipulator {
         return concatStr;
     }
 
-    public int getIndexOrNull(String text, char letter) {
+    public int getIndexOfChar(String text, char letter) {
         int indexOfChar = text.indexOf(letter);
         return indexOfChar;
+    }
+
+    public int getIndexOfSubString(String line, String text) {
+        int indexOfSubString = line.indexOf(text);
+        return indexOfSubString;
     }
 }
