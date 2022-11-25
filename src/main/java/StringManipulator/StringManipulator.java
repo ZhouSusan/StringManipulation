@@ -15,4 +15,9 @@ public class StringManipulator {
         int indexOfSubString = line.indexOf(text);
         return indexOfSubString;
     }
+
+    public String concatSubstring(String text1, int start, int end, String text2) {
+        String subStr = text1.substring(start, end);
+        return subStr.concat(text2);
+    }
 }
